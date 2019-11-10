@@ -1,0 +1,28 @@
+.request {
+  &__form {
+    @include push--auto;
+    margin-top: 40px;
+    display: flex;
+    max-width: 1140px;
+    margin: 40px -15px 0;
+  }
+
+  &__form-col {
+    flex-basis: 50%;
+    margin: 0 15px;
+  }
+
+  &__submit-btn {
+    margin-top: 20px;
+  }
+
+  &__textarea-wr {
+    textarea {
+      height: 120px;
+    }
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}

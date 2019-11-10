@@ -1,1 +1,46 @@
 footer.footer
+  .container
+    .footer__heading
+      img(src="./static/images/logo.png", alt="ALT")
+      span Одеський державний центр професійного навчання працівників переробної промисловості
+    .footer__row
+      .footer__contacts-and-fb-subsribe
+        .footer__mail-and-social.mail-and-social
+          .mail-and-social__row.mail-and-social__mail-row
+            a.mail-and-social__mail-link(href="mailto://ioannos74@gmail.com")
+              img(src="./static/images/icons/mail.png", alt="Лист до одеський державний центр професійного навчання працівників переробної промисловості")
+              span ioannos74@gmail.com
+          .mail-and-social__row.mail-and-social__social-row
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/instagram.png", alt="Instagram")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/facebook.png", alt="Facebook")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/youtube.png", alt="Youtube")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/viber.png", alt="Viber")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/telegram.png", alt="Telegram")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/whatsapp.png", alt="Whatsapp")
+        .footer__fb-subscribe
+          | FB
+      .footer__subscribe
+        form.footer__subscribe-form(action="/")
+          .input__wr
+            input#requestMail(type="text", placeholder="Введіть ваш E-mail", inputmode="email")
+            .footer__subscribe-btn
+              button.btn.btn__color_blue(type="submit") Підписатися на розсилку
+    .footer__map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.409646725545!2d30.464267151521256!3d50.48933317938005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd932e859203%3A0xd993d2f12f35c060!2z0YPQuy4g0JrQuNGA0YDQuNC70L7QstGB0LrQsNGPLCAxMTcsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1573424993637!5m2!1sru!2sua", frameborder="0", style="border:0;" allowfullscreen="")
+    .footer__copyright-and-creator
+      .footer__copyright
+        span Сopyright © 2019
+      .footer__creator
+        a.footer__creator-link(href="http://master-landing.in.ua/", target="_blank") Master Landing
