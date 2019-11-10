@@ -65,4 +65,29 @@
       text-decoration: none;
     }
   }
+
+  // News item
+  &.news {
+    .top-deal__content {
+      padding-top: 20px;
+    }
+
+    .top-deal__heading {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        color: $trueBlue;
+        font-size: 14px;
+      }
+
+      time {
+        font-size: 14px;
+      }
+    }
+
+    .top-deal__title {
+      margin-top: 30px;
+    }
+  }
 }
