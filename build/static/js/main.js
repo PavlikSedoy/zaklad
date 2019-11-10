@@ -8,4 +8,9 @@ $(document).ready(function () {
         },
         effect: "fade"
     })
+
+    // Gallery init
+    lightGallery(document.getElementById('gallery'), {
+        thumbnail:true
+    }); 
 });

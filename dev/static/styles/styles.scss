@@ -90,5 +90,16 @@ button { outline: none; }
 
 .content { flex: 1 0 auto; }
 
+.darken-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, .5);
+  opacity: 0;
+  transition: .3s ease;
+}
+
 //Модули
 @import "modules/modules";
