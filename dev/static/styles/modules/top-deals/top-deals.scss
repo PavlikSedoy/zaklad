@@ -1,0 +1,68 @@
+.top-deals {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__all-deals-btn {
+    @include push--auto;
+    margin-top: 60px;
+    width: 290px;
+  }
+}
+
+// ITEM
+.top-deal {
+  background-color: $white;
+  border: 1px solid transparent;
+  transition: .3s ease;
+
+  &__img-wr {
+    width: 100%;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 40px 30px;
+    text-align: center;
+    color: $black;
+  }
+
+  &__title {
+    font-family: $PTSerif-font;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &__desc {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  &__more-link {
+    margin-top: 20px;
+    color: $trueBlue;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+  }
+
+  &:hover {
+    border-color: $manatee;
+
+    .top-deal__more-link {
+      text-decoration: none;
+    }
+  }
+}

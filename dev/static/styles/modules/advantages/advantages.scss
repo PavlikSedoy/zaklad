@@ -1,0 +1,26 @@
+.advantages {
+  display: flex;
+
+  &__item {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  &__img {
+    height: 80px;
+  }
+
+  &__title {
+    margin-top: 23px;
+    font-family: $PTSerif-font;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

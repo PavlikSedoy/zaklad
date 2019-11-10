@@ -1,0 +1,19 @@
+@import "swiper/swiper";
+@import "buttons/buttons";
+@import "footer/footer";
+@import "header/header";
+@import "navigation/navigation";
+@import "small-blocks/small-blocks";
+@import "container/container";
+@import "mail-and-social/mail-and-social";
+@import "phones/phones";
+// Home page
+@import "home-slider/home-slider";
+@import "about-us/about-us";
+@import "advantages/advantages";
+@import "top-deals/top-deals";
+
+// media
+@media screen and (max-width: 1530px) {
+  @import "container/media/container-to-1200.scss";
+}

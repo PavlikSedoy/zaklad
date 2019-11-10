@@ -1,0 +1,21 @@
+.phones {
+  display: flex;
+
+  &__phone-link {
+    font-weight: 500;
+    margin-top: 15px;
+    color: $black;
+  }
+
+  &__phones-list {
+    margin-left: 9px;
+  }
+
+  li {
+    margin-top: 7px;
+
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+}
