@@ -1,0 +1,41 @@
+.partners {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-gap: 30px;
+}
+
+.partner {
+  padding-bottom: 6px;
+  text-align: center;
+
+  &__img-wr {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $PTSerif-font;
+  }
+
+  &__speciality {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
+    display: block;
+  }
+}

@@ -13,4 +13,10 @@
     margin-top: 60px;
     width: 280px;
   }
+
+  &.white-bg {
+    .top-deal {
+      background: $snow;
+    }
+  }
 }

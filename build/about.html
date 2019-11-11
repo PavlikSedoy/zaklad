@@ -2,14 +2,14 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
+    <title>Про нас</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="index-page">
+  <body class="about-page">
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
@@ -43,7 +43,7 @@
             <h1>Одеський державний центр професійного навчання працівників переробної промисловості</h1>
           </div>
         </div>
-        <nav class="nav header__nav no-bottom-border">
+        <nav class="nav header__nav">
           <div class="container nav__container">
             <ul>
               <li><a href="/">Головна</a></li>
@@ -58,48 +58,51 @@
             </ul>
           </div>
         </nav>
-      </header>
-      <main class="content">
-        <div class="home-slider">
+        <div class="header__breadcrumbs breadcrumbs">
           <div class="container">
-            <div class="swiper-container home-slider-container home-slider__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide home-slider__slide" style="background-image: url('./static/images/home-slider.png')">
-                  <div class="home-slider__content">
-                    <h3>Ярмарок професій для школярів організував Білгород-Дністровський міськрайонний центр зайнятості</h3>
-                    <div class="home-slider__button"><a class="btn btn__color_blue" href="/">Дізнатися більше</a></div>
-                  </div>
-                </div>
-                <div class="swiper-slide home-slider__slide" style="background-image: url('./static/images/home-slider.png')">
-                  <div class="home-slider__content">
-                    <h3>Ярмарок професій для школярів організував Білгород-Дністровський міськрайонний центр зайнятості2</h3>
-                    <div class="home-slider__button"><a class="btn btn__color_blue" href="/">Дізнатися більше</a></div>
-                  </div>
-                </div>
-                <div class="swiper-slide home-slider__slide" style="background-image: url('./static/images/home-slider.png')">
-                  <div class="home-slider__content">
-                    <h3>Ярмарок професій для школярів організував Білгород-Дністровський міськрайонний центр зайнятості3</h3>
-                    <div class="home-slider__button"><a class="btn btn__color_blue" href="/">Дізнатися більше</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ul>
+              <li><a href="/">Головна</a></li>
+              <li><span>Про нас</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <section class="about-us">
+      </header>
+      <main class="content">
+        <section class="content-tabs">
           <div class="container">
-            <h2>Про наш заклад</h2>
-            <div class="about-us__content content">
-              <div class="about-us__col">
+            <ul class="content-tabs__list">
+              <li class="content-tabs__item"><a class="content-tabs__link active" href="/about.html"> 
+                  <h3>Про навчальний заклад</h3></a></li>
+              <li class="content-tabs__item"><a class="content-tabs__link" href="/about-history.html">
+                  <h3>Історія, наші досягнення</h3></a></li>
+              <li class="content-tabs__item"><a class="content-tabs__link" href="/about-rulers.html"> 
+                  <h3>Правила вступу</h3></a></li>
+              <li class="content-tabs__item"><a class="content-tabs__link" href="/about-partners.html">
+                  <h3>Наші партнери</h3></a></li>
+              <li class="content-tabs__item"><a class="content-tabs__link" href="/about-career.html">
+                  <h3>Кар’єра</h3></a></li>
+              <li class="content-tabs__item"><a class="content-tabs__link" href="/about-cooperation.html">
+                  <h3>Співробітництво</h3></a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="content-tabs__content">
+              <div class="content-tabs__content-row">
+                <div class="content-tabs__img-block"><img src="./static/images/about-zaklad.png" alt="ALT"></div>
+                <div class="content-tabs__row-content">
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+                  <p>Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+                </div>
+              </div>
+              <div class="content-tabs__content-row text">
                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                 <p>Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
-              </div>
-              <div class="about-us__col">
-                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                 <p>Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
               </div>
             </div>
-            <div class="about-us__advantages advantages">
+            <div class="content-tabs__advantages advantages">
               <article class="advantages__item"><img class="advantages__img" src="./static/images/advantages-item-1.png" alt="Advantages">
                 <h4 class="advantages__title">Назва переваги 1</h4>
                 <p class="advantages__desc">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя. коли невідомий друкар взяв шрифтову гранку</p>
@@ -119,54 +122,17 @@
             </div>
           </div>
         </section>
-        <section class="top-deals section__bg_snow">
-          <div class="container">
-            <h2>Топ пропозиції</h2>
-            <div class="top-deals__row">
-              <article class="top-deals__item top-deal"><a class="top-deal__link-wr" href="/">
-                  <div class="top-deal__img-wr"><img src="./static/images/top-deal-item-1.png" alt="Alt"></div>
-                  <div class="top-deal__content">
-                    <h4 class="top-deal__title">Названа професії</h4>
-                    <p class="top-deal__desc">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя. коли невідомий друкар взяв шрифтову гранку.</p><span class="top-deal__more-link">Дізнатися більше →</span>
-                  </div></a></article>
-              <article class="top-deals__item top-deal"><a class="top-deal__link-wr" href="/">
-                  <div class="top-deal__img-wr"><img src="./static/images/top-deal-item-2.png" alt="Alt"></div>
-                  <div class="top-deal__content">
-                    <h4 class="top-deal__title">Названа професії</h4>
-                    <p class="top-deal__desc">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя. коли невідомий друкар взяв шрифтову гранку.</p><span class="top-deal__more-link">Дізнатися більше →</span>
-                  </div></a></article>
-              <article class="top-deals__item top-deal"><a class="top-deal__link-wr" href="/">
-                  <div class="top-deal__img-wr"><img src="./static/images/top-deal-item-1.png" alt="Alt"></div>
-                  <div class="top-deal__content">
-                    <h4 class="top-deal__title">Названа професії</h4>
-                    <p class="top-deal__desc">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя. коли невідомий друкар взяв шрифтову гранку.</p><span class="top-deal__more-link">Дізнатися більше →</span>
-                  </div></a></article>
-              <article class="top-deals__item top-deal"><a class="top-deal__link-wr" href="/">
-                  <div class="top-deal__img-wr"><img src="./static/images/top-deal-item-2.png" alt="Alt"></div>
-                  <div class="top-deal__content">
-                    <h4 class="top-deal__title">Названа професії</h4>
-                    <p class="top-deal__desc">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя. коли невідомий друкар взяв шрифтову гранку.</p><span class="top-deal__more-link">Дізнатися більше →</span>
-                  </div></a></article>
-            </div>
-            <div class="top-deals__all-deals-btn"><a class="btn btn__color_blue" href="/">Перейти до усіх вакансій</a></div>
-          </div>
-        </section>
-        <section class="gallery">
+        <section class="gallery section__bg_snow">
           <div class="container">
             <div class="gallery__wr" id="gallery"><a class="gallery__link" href="./static/images/gallery/1.png"><img src="./static/images/gallery/1.png" alt="ALT">
                 <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/2.png"><img src="./static/images/gallery/2.png" alt="ALT">
                 <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/3.png"><img src="./static/images/gallery/3.png" alt="ALT">
                 <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/4.png"><img src="./static/images/gallery/4.png" alt="ALT">
                 <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/5.png"><img src="./static/images/gallery/5.png" alt="ALT">
-                <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/6.png"><img src="./static/images/gallery/6.png" alt="ALT">
-                <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/7.png"><img src="./static/images/gallery/7.png" alt="ALT">
-                <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/8.png"><img src="./static/images/gallery/8.png" alt="ALT">
-                <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/9.png"><img src="./static/images/gallery/9.png" alt="ALT">
-                <div class="darken-bg"></div><span></span></a><a class="gallery__link" href="./static/images/gallery/10.png"><img src="./static/images/gallery/10.png" alt="ALT">
                 <div class="darken-bg"></div><span></span></a></div>
           </div>
         </section>
-        <section class="last-news section__bg_snow">
+        <section class="last-news white-bg">
           <div class="container">
             <h2>Останні новини</h2>
             <div class="last-news__row">
@@ -208,33 +174,6 @@
                   </div></a></article>
             </div>
             <div class="last-news__button"><a class="btn btn__color_blue" href="/">Перейти до усіх новин</a></div>
-          </div>
-        </section>
-        <section class="request">
-          <div class="container">
-            <h2 class="mb0">Залишити заявку на запис</h2>
-            <p class="section__desc">Залиште заявку і ми зв’яжемося з Вами найближчим часом</p>
-            <form class="request__form" action="/">
-              <div class="request__form-col">
-                <div class="input__wr">
-                  <input id="requestName" type="text" placeholder="Ваше ім’я">
-                </div>
-                <div class="input__wr">
-                  <input id="requestPhone" type="text" placeholder="Ваш номер телефону" inputmode="tel">
-                </div>
-                <div class="input__wr">
-                  <input id="requestMail" type="text" placeholder="Ваша пошта" inputmode="email">
-                </div>
-              </div>
-              <div class="request__form-col">
-                <div class="textarea__wr request__textarea-wr">
-                  <textarea id="requestText" placeholder="Ваш коментар"></textarea>
-                </div>
-                <div class="request__submit-btn">
-                  <button class="btn btn__color_blue" type="submit">Залишити заявку</button>
-                </div>
-              </div>
-            </form>
           </div>
         </section>
       </main>

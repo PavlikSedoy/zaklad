@@ -1,0 +1,14 @@
+.content-tabs {
+  &__item {
+    margin-left: 20px;
+  }
+
+  &__img-block {
+    flex-basis: 400px;
+    height: 365px;
+  }
+
+  &__row-content {
+    flex-basis: calc(100% - 400px);
+  }
+}

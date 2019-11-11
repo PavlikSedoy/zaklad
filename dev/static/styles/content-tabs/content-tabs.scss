@@ -1,0 +1,90 @@
+.content-tabs {
+  padding-top: 0;
+
+  &__link {
+    padding: 18px 0;
+    display: block;
+    position: relative;
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: $black;
+    }
+
+    &.active {
+      h3 {
+        color: $trueBlue;
+      }
+
+      &:after {
+        @include pseudo;
+        bottom: -3px;
+        height: 5px;
+        width: 100%;
+        left: 0;
+        background-color: $yellow;
+      }
+    }
+  }
+  
+  &__list {
+    display: inline-flex;
+    border-bottom: 1px solid $pastelGray;
+  }
+
+  &__item {
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  // Content in tabs
+  p {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__content {
+    padding-top: 40px;
+  }
+
+  &__content-row {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.text {
+      display: block;
+    }
+  }
+
+  &__img-block {
+    height: 307px;
+    flex-basis: 490px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__row-content {
+    flex-basis: calc(100% - 490px);
+    padding-left: 30px;
+  }
+
+  // Advantages
+  &__advantages {
+    margin-top: 40px;
+  }
+}

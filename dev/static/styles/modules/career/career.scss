@@ -1,0 +1,39 @@
+.career {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 30px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>div {
+      flex-basis: calc(50% - 15px);
+    }
+  }
+
+  &__img-wr {
+    width: 100%;
+    height: 235px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-family: $PTSerif-font;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__content {
+    p {
+      font-size: 15px;
+    }
+  }
+}

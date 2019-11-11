@@ -15,8 +15,14 @@
 @import "gallery/gallery";
 @import "last-news/last-news";
 @import "request/request";
+// About pages
+@import "content-tabs/content-tabs";
+@import "partners/partners";
+@import "career/career";
 
 // media
 @media screen and (max-width: 1530px) {
   @import "container/media/container-to-1200.scss";
+  @import "content-tabs/media/content-tabs-to-1200.scss";
+  @import "partners/media/partners-to-1200.scss";
 }

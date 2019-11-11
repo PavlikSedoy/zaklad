@@ -52,24 +52,55 @@ header.header
     .header__row.header__title-row
       h1 Одеський державний центр професійного навчання працівників переробної промисловості
   //- NAVIGATION
-  nav.nav.header__nav
-    .container.nav__container
-      ul
-        li
-          a(href="/") Головна
-        li
-          a(href="/about.html") Про нас
-        li
-          a(href="/activity.html") Діяльність
-        li
-          a(href="/profession.html") Професії
-        li
-          a(href="/publications.html") Публікації
-        li
-          a(href="/career-guidance.html") Профорієнтація
-        li
-          a(href="/reviews.html") Відгуки
-        li
-          a(href="/faq.html") FAQ
-        li
-          a(href="/contacts.html") Контакти
+  if pageClass == 'index-page'
+    nav.nav.header__nav.no-bottom-border
+      .container.nav__container
+          ul
+            li
+              a(href="/") Головна
+            li
+              a(href="/about.html") Про нас
+            li
+              a(href="/activity.html") Діяльність
+            li
+              a(href="/profession.html") Професії
+            li
+              a(href="/publications.html") Публікації
+            li
+              a(href="/career-guidance.html") Профорієнтація
+            li
+              a(href="/reviews.html") Відгуки
+            li
+              a(href="/faq.html") FAQ
+            li
+              a(href="/contacts.html") Контакти
+  else
+    nav.nav.header__nav
+      .container.nav__container
+        ul
+          li
+            a(href="/") Головна
+          li
+            a(href="/about.html") Про нас
+          li
+            a(href="/activity.html") Діяльність
+          li
+            a(href="/profession.html") Професії
+          li
+            a(href="/publications.html") Публікації
+          li
+            a(href="/career-guidance.html") Профорієнтація
+          li
+            a(href="/reviews.html") Відгуки
+          li
+            a(href="/faq.html") FAQ
+          li
+            a(href="/contacts.html") Контакти
+    .header__breadcrumbs.breadcrumbs
+      .container
+        ul
+          li
+            a(href='/') Головна
+          li
+            if pageClass == 'about-page'
+              span Про нас

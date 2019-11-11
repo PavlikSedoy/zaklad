@@ -52,6 +52,12 @@
   &__nav {
     margin-top: 36px;
   }
+
+  // Breadcrumbs
+  &__breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
 }
 
 // **********
@@ -59,6 +65,12 @@
 // **********
 .nav {
   border-top: 1px solid $pastelGray;
+  border-bottom: 1px solid $pastelGray;
+
+  // No bottom border
+  &.no-bottom-border {
+    border-bottom: none;
+  }
 
   ul {
     display: flex;
@@ -76,5 +88,52 @@
     &:hover {
       color: $trueBlue;
     }
+  }
+}
+
+// **********
+// Breadcumbs
+// **********
+.breadcrumbs {
+  ul {
+    display: flex;
+  }
+
+  li {
+    position: relative;
+    margin-left: 15px;
+
+    &:before {
+      @include pseudo;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '/';
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  a, span {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  a {
+    color: $black;
+  }
+
+  span {
+    color: $trueBlue;
   }
 }
