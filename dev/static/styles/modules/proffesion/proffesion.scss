@@ -89,4 +89,19 @@
     margin-right: 3px;
     font-weight: bold;
   }
+
+  &__publication-heading {
+    margin-top: 10px;
+
+    span {
+      font-size: 14px;
+      color: $trueBlue;
+    }
+
+    time {
+      font-size: 14px;
+      color: $dimGray;
+      margin-left: 60px;
+    }
+  }
 }
