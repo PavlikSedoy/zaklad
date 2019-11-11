@@ -1,0 +1,46 @@
+//- include ../modules/home-slider/home-slider
+section.content-tabs
+  .container
+    ul.content-tabs__list
+      li.content-tabs__item
+        a.content-tabs__link(href='/publications.html') 
+          h3 Статті
+      li.content-tabs__item
+        a.content-tabs__link(href='/publications-news.html')
+          h3 Новини
+      li.content-tabs__item
+        a.content-tabs__link(href='/publications-legislation.html') 
+          h3 Законодавство
+      li.content-tabs__item
+        a.content-tabs__link(href='/publications-about-teaching.html') 
+          h3 Про навчання 
+      li.content-tabs__item
+        a.content-tabs__link.active(href='/publications-gallery.html') 
+          h3 Галерея
+  .container
+    .content-tabs__content
+      section.publications-gallery
+        .swiper-container.gallery-top
+          .swiper-wrapper
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+          .swiper-button-next
+          .swiper-button-prev
+        .swiper-container.gallery-thumbs
+          .swiper-wrapper
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+            .swiper-slide(style="background-image:url(./static/images/home-slider.png)")
+        .publications-gallery__arrow-left
+          img(src="./static/images/icons/arrow-left.png", alt="Arrow left")
+        .publications-gallery__arrow-right
+          img(src="./static/images/icons/arrow-right.png", alt="Arrow right")
