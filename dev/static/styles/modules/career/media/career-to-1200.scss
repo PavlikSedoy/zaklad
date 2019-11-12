@@ -1,0 +1,11 @@
+.career {
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    flex-direction: column;
+  }
+
+  &__content {
+    padding-top: 10px;
+  }
+}

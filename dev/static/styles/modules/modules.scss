@@ -25,12 +25,103 @@
 @import "publications/publications";
 // Reviews
 @import "reviews/reviews";
+// Faq
+@import "faq/faq";
+// Contacts
+@import "contacts/contacts";
+// popup
+@import "popup/popup";
+// Hamburger
+@import "hamburger/hamburger";
 
 
 // media
 @media screen and (max-width: 1530px) {
-  @import "container/media/container-to-1200.scss";
-  @import "content-tabs/media/content-tabs-to-1200.scss";
-  @import "partners/media/partners-to-1200.scss";
-  @import "proffesion/media/proffesion-to-1200.scss";
+  @import "container/media/container-to-1200";
+  @import "content-tabs/media/content-tabs-to-1200";
+  @import "partners/media/partners-to-1200";
+  @import "proffesion/media/proffesion-to-1200";
+  @import "career/media/career-to-1200";
+}
+
+@media screen and (max-width: 1199px) {
+  @import "container/media/container-to-992";
+  @import "header/media/header-to-992";
+  @import "top-deals/media/top-deals-to-992";
+  @import "last-news/media/last-news-to-992";
+  @import "footer/media/footer-to-992";
+  @import "content-tabs/media/content-tabs-to-992";
+  @import "publications/media/publications-to-992";
+}
+
+@media screen and (max-width: 991px) {
+  section h2 {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  @import "container/media/container-to-768";
+  @import "header/media/header-to-768";
+  @import "home-slider/media/home-slider-to-768";
+  @import "buttons/media/buttons-to-768";
+  @import "advantages/media/advantages-to-768";
+  @import "content-tabs/media/content-tabs-to-768";
+  @import "partners/media/partners-to-768";
+  @import "career/media/career-to-768";
+  @import "publications/media/publications-to-768";
+  @import "faq/media/faq-to-768";
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  section {
+    h2 {
+      font-size: 18px;
+
+      &:before {
+        top: -10px;
+      }
+    }
+
+    p.section__desc {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    padding: 40px 0;
+  }
+
+  .input__wr {
+    margin-top: 10px;
+  }
+
+  @import "footer/media/footer-to-320";
+  @import "header/media/header-to-320";
+  @import "home-slider/media/home-slider-to-320";
+  @import "about-us/media/about-us-to-320";
+  @import "advantages/media/advantages-to-320";
+  @import "top-deals/media/top-deals-to-320";
+  @import "gallery/media/gallery-to-320";
+  @import "last-news/media/last-news-to-320";
+  @import "request/media/request-to-320";
+  @import "content-tabs/media/content-tabs-to-320";
+  @import "partners/media/partners-to-320";
+  @import "career/media/career-to-320";
+  @import "proffesion/media/proffesion-to-320";
+  @import "publications/media/publications-to-320";
+  @import "reviews/media/reviews-to-320";
+  @import "popup/media/popup-to-320";
+  @import "faq/media/faq-to-320";
 }

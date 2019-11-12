@@ -26,3 +26,24 @@ section.reviews
         time 12.09.19
       .reviews__item-content
         p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть.
+.popup#reviewPopup
+  .popup__modal
+    .popup__close
+      img(src="./static/images/icons/close.png", alt="close popup")
+    h2.mb0 Залишити відгук
+    p.section__desc Заповніть форму та залиште Ваш відгук
+    form.popup__form(action="/")
+      .input__wr
+        input#modalReviewName(type="text", placeholder="Ваше ім’я")
+        .input__icon
+          include ../../static/images/icons/user.svg
+      .input__wr
+        input#modalReviewMail(type="text", placeholder="Ваша пошта", inputmode="email")
+        .input__icon
+          include ../../static/images/icons/mail.svg
+      .textarea__wr.request__textarea-wr
+        textarea#modalReviewText(placeholder="Ваш коментар")
+        .textarea__icon
+          include ../../static/images/icons/comment.svg
+      .request__submit-btn
+        button.btn.btn__color_blue(type="submit") Залишити відгук

@@ -1,0 +1,23 @@
+.reviews {
+  &__btn {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &__item-content {
+    padding: 20px;
+  }
+
+  &__item-header {
+    padding: 20px;
+
+    time {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 17px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.faq {
+  &__item-header {
+    padding: 15px 10px;
+  }
+
+  &__item-title {
+    font-size: 14px;
+  }
+
+  &__item-plus {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.faq__item-plus:before, .faq__item-plus:after {
+  height: 2px;
+}

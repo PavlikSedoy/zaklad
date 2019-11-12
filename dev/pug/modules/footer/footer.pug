@@ -44,3 +44,42 @@ footer.footer
         span Сopyright © 2019
       .footer__creator
         a.footer__creator-link(href="http://master-landing.in.ua/", target="_blank") Master Landing
+
+.popup#requestPopup
+  .popup__modal
+    .popup__close
+      img(src="./static/images/icons/close.png", alt="close popup")
+    h2.mb0 Залишити заявку на запис
+    p.section__desc Залиште заявку і ми зв’яжемося з Вами найближчим часом
+    form.popup__form(action="/")
+      .input__wr
+        input#modalRequestName(type="text", placeholder="Ваше ім’я")
+        .input__icon
+          include ../../../static/images/icons/user.svg
+      .input__wr
+        input#modalRequestPhone(type="text", placeholder="Ваш номер телефону", inputmode="tel")
+        .input__icon
+          include ../../../static/images/icons/phone.svg
+      .input__wr
+        input#modalRequestMail(type="text", placeholder="Ваша пошта", inputmode="email")
+        .input__icon
+          include ../../../static/images/icons/mail.svg
+      .textarea__wr.request__textarea-wr
+        textarea#modalRequestText(placeholder="Ваш коментар")
+        .textarea__icon
+          include ../../../static/images/icons/comment.svg
+      .request__submit-btn
+        button.btn.btn__color_blue(type="submit") Залишити заявку
+.popup#callbackPopup
+  .popup__modal
+    .popup__close
+      img(src="./static/images/icons/close.png", alt="close popup")
+    h2.mb0 Замовити дзвінок
+    p.section__desc Залиште номер телефону і ми зв’яжемося з Вами найближчим часом
+    form.popup__form(action="/")
+      .input__wr
+        input#modalCallbackPhone(type="text", placeholder="Ваш номер телефону", inputmode="tel")
+        .input__icon
+          include ../../../static/images/icons/phone.svg
+      .request__submit-btn
+        button.btn.btn__color_blue(type="submit") Замовити дзвінок

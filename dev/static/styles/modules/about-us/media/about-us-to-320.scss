@@ -1,0 +1,13 @@
+.about-us {
+  &__content {
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    flex-basis: 100%;
+
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+}

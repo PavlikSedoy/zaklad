@@ -48,9 +48,11 @@ header.header
         .header__buttons-item
           button.btn.btn__color_blue(type="button", data-type="modal", data-modal="request") Онлайн запис
         .header__buttons-item
-          button.btn.btn__color_yellow(type="button", data-type="modal", data-modal="callback") Онлайн запис
+          button.btn.btn__color_yellow(type="button", data-type="modal", data-modal="callback") Замовити дзвінок
     .header__row.header__title-row
       h1 Одеський державний центр професійного навчання працівників переробної промисловості
+    .header__hamburger.hamburger#hamburger
+      span
   //- NAVIGATION
   if pageClass == 'index-page'
     nav.nav.header__nav.no-bottom-border
@@ -104,3 +106,32 @@ header.header
           li
             if pageClass !== 'index-page'
               span Про нас
+  .mobile-nav.header__mobile-nav
+    .mobile-nav__close
+      img(src="./static/images/icons/close.png", alt="close popup")
+    .container.mobile-nav__container
+      .mobile-nav__buttons
+        .mobile-nav__buttons-item
+          button.btn.btn__color_blue(type="button", data-type="modal", data-modal="request") Онлайн запис
+        .mobile-nav__buttons-item
+          button.btn.btn__color_yellow(type="button", data-type="modal", data-modal="callback") Замовити дзвінок
+      nav.mobile-nav__nav
+        ul
+          li
+            a(href="/") Головна
+          li
+            a(href="/about.html") Про нас
+          li
+            a(href="/activity.html") Діяльність
+          li
+            a(href="/profession.html") Професії
+          li
+            a(href="/publications.html") Публікації
+          li
+            a(href="/career-guidance.html") Профорієнтація
+          li
+            a(href="/reviews.html") Відгуки
+          li
+            a(href="/faq.html") FAQ
+          li
+            a(href="/contacts.html") Контакти 

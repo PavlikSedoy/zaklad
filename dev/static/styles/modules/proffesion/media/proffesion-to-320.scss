@@ -1,0 +1,10 @@
+.proffesion {
+  &__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.proffesion-item__title {
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,44 @@
+.footer {
+  padding: 40px 0;
+
+  &__subscribe-form {
+    width: 100%;
+    width: auto;
+  }
+
+  &__subscribe-btn {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__heading {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    img {
+      height: 70px;
+    }
+
+    span {
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  &__copyright {
+    padding-right: 5px;
+  }
+
+  &__creator {
+    padding-left: 5px;
+  }
+
+  &__copyright-and-creator {
+    width: 100%;
+    justify-content: center;
+  }
+}

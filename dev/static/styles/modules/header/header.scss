@@ -58,6 +58,17 @@
     margin-top: 20px;
     margin-bottom: 6px;
   }
+
+  // Hamburger
+  &__hamburger {
+    display: none;
+    z-index: 4;
+  }
+
+  // Mobile nav
+  &__mobile-nav {
+    display: none;
+  }
 }
 
 // **********
@@ -135,5 +146,50 @@
 
   span {
     color: $trueBlue;
+  }
+}
+
+// **********
+// MOBILE NAV
+// **********
+.mobile-nav {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  overflow-y: scroll;
+  
+  &__container {
+    // overflow-y: scroll;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin: 30px -15px 10px;
+
+    &>div {
+      flex-basis: calc(50% - 30px);
+      margin: 15px;
+    }
+
+    border-bottom: 1px solid $silver;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 25px;
+    color: $black;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
   }
 }

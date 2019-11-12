@@ -1,0 +1,19 @@
+.content-tabs {
+  &__link {
+    padding: 10px 0;
+
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  &__content-row img {
+    width: 100%;
+    margin-right: 0;
+  }
+}

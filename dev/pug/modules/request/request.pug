@@ -6,12 +6,20 @@ section.request
       .request__form-col
         .input__wr
           input#requestName(type="text", placeholder="Ваше ім’я")
+          .input__icon
+            include ../../../static/images/icons/user.svg
         .input__wr
           input#requestPhone(type="text", placeholder="Ваш номер телефону", inputmode="tel")
+          .input__icon
+            include ../../../static/images/icons/phone.svg
         .input__wr
           input#requestMail(type="text", placeholder="Ваша пошта", inputmode="email")
+          .input__icon
+            include ../../../static/images/icons/mail.svg
       .request__form-col
         .textarea__wr.request__textarea-wr
           textarea#requestText(placeholder="Ваш коментар")
+          .textarea__icon
+            include ../../../static/images/icons/comment.svg
         .request__submit-btn
           button.btn.btn__color_blue(type="submit") Залишити заявку

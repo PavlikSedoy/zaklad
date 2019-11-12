@@ -1,0 +1,36 @@
+.header {
+  &__nav {
+    display: none;
+  }
+
+  &__buttons {
+    display: none;
+  }
+
+  &__contacts {
+    flex-direction: row;
+    align-items: center;
+    flex-basis: calc(100% - 80px);
+    justify-content: space-between;
+
+    & > div {
+      margin-top: 0;
+    }
+  }
+
+  &__logo {
+    top: 0;
+  }
+
+  &__title-row {
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+
+  &__hamburger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}

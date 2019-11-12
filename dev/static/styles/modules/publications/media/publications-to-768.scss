@@ -1,0 +1,20 @@
+.publications {
+  &__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.publications-gallery {
+  .gallery-top {
+    height: 250px;
+  }
+
+  .gallery-thumbs {
+    height: 50px;
+    margin-top: 10px;
+  }
+} 
+
+.publications-gallery__arrow-left, .publications-gallery__arrow-right {
+  bottom: 70px;
+}

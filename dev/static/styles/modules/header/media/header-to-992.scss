@@ -1,0 +1,21 @@
+.header {
+  &__contacts, &__buttons {
+    flex-direction: column;
+  }
+
+  &__phones {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  &__buttons-item {
+    &:last-child {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  &__logo {
+    top: 50px;
+  }
+}

@@ -1,0 +1,64 @@
+//- include ../modules/home-slider/home-slider
+section.contacts
+  .container.contacts__container
+    .contacts__content
+      .contacts__item
+        img(src="./static/images/icons/location.png", alt="Location")
+        a(href="/") Україна, Місто, Назва вулиці, 19
+      .mail-and-social.contacts__mail-and-social
+          .mail-and-social__row.mail-and-social__mail-row
+            a.mail-and-social__mail-link(href="mailto://ioannos74@gmail.com")
+              img(src="./static/images/icons/mail.png", alt="Лист до одеський державний центр професійного навчання працівників переробної промисловості")
+              span ioannos74@gmail.com
+          .mail-and-social__row.mail-and-social__social-row
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/instagram.png", alt="Instagram")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/facebook.png", alt="Facebook")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/youtube.png", alt="Youtube")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/viber.png", alt="Viber")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/telegram.png", alt="Telegram")
+            //- Social item
+            a.mail-and-social__social-link(href="/")
+              img(src="./static/images/icons/whatsapp.png", alt="Whatsapp")
+      .phones.contacts__phones
+          .phones__icon-wr
+            img(src="./static/images/icons/phone.png", alt="Зателефонувати до одеський державний центр професійного навчання працівників переробної промисловості")
+          .phones__phones-list
+            ul
+              li
+                a.phones__phone-link(href="tel://+380487553548") (048) 755 35 48
+              li
+                a.phones__phone-link(href="tel://+380487553598") (048) 755 35 98
+    .contacts__form-block
+      h2.mb0 Залишити заявку на запис
+      p.section__desc Залиште заявку і ми зв’яжемося з Вами найближчим часом
+      form.request__form(action="/")
+        .request__form-col
+          .input__wr
+            input#contactName(type="text", placeholder="Ваше ім’я")
+            .input__icon
+              include ../../static/images/icons/user.svg
+          .input__wr
+            input#contactPhone(type="text", placeholder="Ваш номер телефону", inputmode="tel")
+            .input__icon
+              include ../../static/images/icons/phone.svg
+          .input__wr
+            input#contactMail(type="text", placeholder="Ваша пошта", inputmode="email")
+            .input__icon
+              include ../../static/images/icons/mail.svg
+        .request__form-col
+          .textarea__wr.request__textarea-wr
+            textarea#contactText(placeholder="Ваш коментар")
+            .textarea__icon
+              include ../../static/images/icons/comment.svg
+          .request__submit-btn
+            button.btn.btn__color_blue(type="submit") Залишити заявку

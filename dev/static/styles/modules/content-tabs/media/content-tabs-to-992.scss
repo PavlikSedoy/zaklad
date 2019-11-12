@@ -1,0 +1,17 @@
+.content-tabs {
+  &__list {
+    border-bottom: none;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid $silver;
+  }
+
+  &__link h3 {
+    font-size: 16px;
+  }
+}

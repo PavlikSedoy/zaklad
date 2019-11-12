@@ -1,0 +1,23 @@
+.publications {
+  &__items {
+    grid-template-columns: 1fr;
+  }
+}
+
+.publications-gallery {
+  .gallery-top {
+    height: 130px;
+  }
+}
+
+.publications-gallery .swiper-button-next, .publications-gallery .swiper-button-prev {
+  width: 30px;
+}
+
+.publications-gallery .gallery-thumbs {
+  width: calc( 100% - 50px);
+}
+
+.publications-gallery__arrow-left, .publications-gallery__arrow-right {
+  bottom: 50px;
+}

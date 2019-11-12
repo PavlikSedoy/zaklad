@@ -1,0 +1,12 @@
+.advantages {
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: 50%;
+    margin-top: 20px;
+
+    &:first-child, &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}

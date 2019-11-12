@@ -1,0 +1,14 @@
+.home-slider {
+  &__content {
+    margin-left: 30px;
+  }
+
+  &__slide h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__slider {
+    height: 350px;
+  }
+}

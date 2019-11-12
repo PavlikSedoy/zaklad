@@ -1,0 +1,13 @@
+.request {
+  &__form {
+    flex-wrap: wrap;
+
+    & > div {
+      flex-basis: 100%;
+
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}

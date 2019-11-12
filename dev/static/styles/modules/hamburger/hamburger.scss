@@ -1,0 +1,28 @@
+.hamburger {
+  height: 25px;
+  width: 40px;
+  cursor: pointer;
+
+  span, &:after, &:before {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: $black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    @include pseudo;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  &::before {
+    @include pseudo;
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
+  }
+}

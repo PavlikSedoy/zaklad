@@ -1,0 +1,14 @@
+.last-news {
+  &__row {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+
+    &:first-child, &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
